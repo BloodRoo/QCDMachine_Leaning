@@ -574,7 +574,7 @@ public:
       TString rootname = "*.root";
       if (options.inputFolder.find("sherpa") != std::string::npos || options.inputFolder.find("Sherpa") != std::string::npos)
         rootname = "*Cluster*.root";
-      for (int i = 1; i <= 50; ++i)
+      for (int i = 1; i <= 100; ++i)
       {
         t->Add((TString)options.inputFolder +
                Form("/Chunk%d/", i) + rootname + "/JetsAndDaughters");

@@ -28,5 +28,5 @@ for InputFile in "${InputFiles[@]}"; do
     target_dir="${BaseFolder}Machine_Learning/Features_${Version}/${InputFile}_${SampleType}_jinitpt_${jinit_ptlow}_${jinit_pthigh}_j2pt_${j2_ptlow}_${j2_pthigh}"
     [[ ! -d $target_dir ]] && mkdir -p $target_dir
     # ./generate_sample -i 0 -n 50 -k 50 -I ${InputFolder}${InputFile} -O /storage/xiaoxue/code/data/Machine_Learning/Features/${InputFile}_${SampleType}_jinitpt_${jinit_ptlow}_${jinit_pthigh}_j2pt_${j2_ptlow}_${j2_pthigh} --jinit_ptlow ${jinit_ptlow} --jinit_pthigh ${jinit_pthigh} --j2_ptlow ${j2_ptlow} --j2_pthigh ${j2_pthigh} --SampleType ${SampleType}
-    run_parallel generate_sample -nchunks 50 -nparts 50 -opt "-I ${InputFolder}${InputFile} -O ${target_dir} --jinit_ptlow ${jinit_ptlow} --jinit_pthigh ${jinit_pthigh} --j2_ptlow ${j2_ptlow} --j2_pthigh ${j2_pthigh} --SampleType ${SampleType}"
+    run_parallel generate_sample_${Version} -nchunks 50 -nparts 50 -opt "-I ${InputFolder}${InputFile} -O ${target_dir} --jinit_ptlow ${jinit_ptlow} --jinit_pthigh ${jinit_pthigh} --j2_ptlow ${j2_ptlow} --j2_pthigh ${j2_pthigh} --SampleType ${SampleType}"
 done
