@@ -13,6 +13,7 @@ This project depends on FastJet and its extensions fjcontrib and IFNPlugin, as w
    make
    make check
    make install
+   cd ..
    ```
    This will install FastJet in the `.local` folder under your home directory.
 
@@ -25,8 +26,9 @@ This project depends on FastJet and its extensions fjcontrib and IFNPlugin, as w
    cd fjcontrib-1.054
    ./configure --fastjet-config=$HOME/.local/bin/fastjet-config
    make
-   make check  # optional
+   make check
    make install
+   cd ..
    ```
 
 ## IFNPlugin
@@ -37,6 +39,7 @@ git clone https://github.com/jetflav/IFNPlugin.git
 cd IFNPlugin
 make
 make install
+cd ..
 ```
 
 ## GHSAlgo
@@ -47,6 +50,7 @@ git clone https://github.com/jetflav/GHSAlgo.git
 cd GHSAlgo
 make
 make install
+cd ..
 ```
 
 ## Boost Library
@@ -56,9 +60,11 @@ The project also requires support from the Boost library:
 ```bash
 wget https://boostorg.jfrog.io/artifactory/main/release/1.85.0/source/boost_1_85_0_rc3.tar.bz2
 tar xjf boost_1_85_0_rc3.tar.bz2
-cd boost_1_85_0_rc3
+#cp /home/xiaoxue/code/2.SpinCorrelation/history/spin/ways/Machine_Learning/boost_1_85_0_rc3.tar.bz2 .
+cd boost_1_85_0
 ./bootstrap.sh --prefix=$HOME/.local/
 ./b2 install
+cd ..
 ```
 
 ## Adding the `bin` Directory to Your PATH
@@ -66,8 +72,8 @@ cd boost_1_85_0_rc3
 To add the `bin` directory of the current project to your `PATH` environment variable, run the following command in your terminal:
 
 ```sh
-echo "export PATH=\"\$PATH:$(pwd)/bin\"" >> ~/.bashrc
-source ~/.bashrc
+echo "export PATH=\"\$PATH:$(pwd)/bin\"" >> ~/.zshrc
+source ~/.zshrc
 ```
 Edit the `bin/compile` script and change line 15 to your own path:
 Adding the `IFN PATH` to Your bin/compile

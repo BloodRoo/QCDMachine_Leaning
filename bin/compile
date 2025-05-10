@@ -12,8 +12,8 @@ else
   output_file="${input_file%.cpp}"
 fi
 
-IFNPLUGIN_PATH=/home/zlin/app/IFNPlugin
-GHSPLUGIN_PATH=/home/zlin/app/GHSAlgo
+IFNPLUGIN_PATH=/home/xiaoxue/code/CMSTool/QCDMachine_Leaning/IFNPlugin
+GHSPLUGIN_PATH=/home/xiaoxue/code/CMSTool/QCDMachine_Leaning/GHSAlgo
 g++ "$input_file" \
     -I"$HOME/.local/include" \
     -I"$IFNPLUGIN_PATH" \
