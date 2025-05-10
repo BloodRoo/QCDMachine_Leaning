@@ -88,3 +88,9 @@ IFNPLUGIN_PATH=/path/to/GHSAlgo
 For example:
 IFNPLUGIN_PATH=/home/zlin/app/GHSAlgo
 ```
+
+## Creating the Directory
+Make sure you have a large folder in your computer, then typing:
+```sh
+ln -s [path] data_storage
+```
