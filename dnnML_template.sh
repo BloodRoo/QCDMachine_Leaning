@@ -1,5 +1,6 @@
 #!/bin/bash
 source /usr/local/root/6.32.04/bin/thisroot.sh
+cd /home/xiaoxue/code/CMSTool/QCDMachine_Leaning
 InputFolder="/storage/xiaoxue/code/data/Features_250510/"
 Model_Name="/storage/shuangyuan/code/analysis_spin/Machine_learning/GridSearch_Fourlabel_new/models/Foulabel_hidden256_128_32_lr0.0005_l20_batch256_dropout0.0"
 # Model_Name="/home/xiaoxue/code/spin/ways/Machine_Learning/GridSearch_Fourlabel_reco/models/Foulabel_hidden_256_128_128_lr0.0005_l20_batch256_dropout0.0"
