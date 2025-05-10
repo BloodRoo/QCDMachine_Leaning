@@ -1,8 +1,9 @@
 #!/bin/bash
 source /usr/local/root/6.32.04/bin/thisroot.sh
-BaseFolder="/storage/xiaoxue/code/data/"
 cd /home/xiaoxue/code/CMSTool/QCDMachine_Leaning
+
 #################### 输入 ####################
+BaseFolder="/storage/xiaoxue/code/data/"
 Version="250510"
 InputFolder="${BaseFolder}herwig/"
 # InputFolder="${BaseFolder}CMSMC/AK8/AK8_MC/"
